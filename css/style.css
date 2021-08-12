@@ -67,17 +67,18 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: cornflowerblue;
 color: black;}
 
-#Projects{
+.Projects{
 float: right;
 margin-top: 100px;
 margin-bottom: 20px;
-width:100%;
+width:100vw;
 padding: 0px;
-height: 500px;
+height: 100vh;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: cornflowerblue;
 color: black;
-
+display: flex;
+box-sizing: border-box;
 }
 
 
@@ -95,14 +96,6 @@ color: black;
   margin-bottom: 20px;
   background-color: cornflowerblue;
 }
-
-#Projects h4{  
-  text-shadow: 3px 3px lightpink ;
-  font-size: 36px;
-  margin-bottom: 20px;
-  background-color: cornflowerblue;
-}
-
 
 p{
     background-color: cornflowerblue;
@@ -122,3 +115,39 @@ p{
   margin-right: 25px;
 }
 
+.Projects h4{  
+  text-shadow: 3px 3px lightpink ;
+  font-size: 36px;
+  margin-bottom: 20px;
+  background-color: cornflowerblue;
+}
+.Projects {
+  width 100vw;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.Projects .box 
+{
+  width: 20vw;
+  text-align: center;
+  line-height: 100vh;
+  flex-grow: 1;
+background-size: cover;
+background-position: center;
+transition: 1s;
+}
+
+.Projects .box:nth-child(1)
+{
+  background:url(./one.jpg)
+}
+.Projects .box :nth-child(2)
+{
+  background:url(./two.jpg)
+}
+.Projects .box :nth-child(3)
+{
+  background:url(./three.jpg)
+}
