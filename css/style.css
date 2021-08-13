@@ -12,7 +12,12 @@ li, a {
   color: pink;
   text-decoration: none;
 }
-
+#avatar {
+  height:100px; 
+  width 100px; 
+  border-radius:50px;
+  float: left;
+}
 .header {
 display: flex;
 justify-content: space-evenly;
@@ -21,7 +26,7 @@ padding: 30px 10%;
 background-color: cornflowerblue;
 
 }
-.header h1 {
+.header h1{
   text-shadow: 3px 3px lightpink;
   font-size: 75px;
   font-weight: bolder;
@@ -31,6 +36,7 @@ background-color: cornflowerblue;
 
 .navBar{
   list-style: none;
+  background-color: cornflowerblue;
 }
 .navBar li {
   background-color: cornflowerblue;
@@ -49,7 +55,7 @@ background-color: cornflowerblue;
 #About-Me {
   margin-top: 100px;
 margin-bottom: 20px;
-width: 50%;
+width: 50vw;
 padding: 50px;
 height: 500px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -57,7 +63,6 @@ background-color: cornflowerblue;
 color: black;}
 
 #Contact {
-  float: right;
   margin-top: 100px;
 margin-bottom: 20px;
 width:50%;
@@ -65,9 +70,23 @@ padding: 50px;
 height: 500px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: cornflowerblue;
-color: black;}
+color: black;
+text-align: center;}
 
-.Projects{
+#Contact h1{
+  background-color:cornflowerblue;
+}
+#Contact h2 {
+  background-color: cornflowerblue;
+}
+#Contact h1 a {
+  background-color:  cornflowerblue;
+padding: 5px;}
+#Contact h2 a { 
+  padding: 5px;
+  background-color: cornflowerblue;}
+
+#Projects{
 float: right;
 margin-top: 100px;
 margin-bottom: 20px;
@@ -106,13 +125,13 @@ p{
   width: 300px
   float: left;
   margin-right: 25px;
+  position: relative;
 }
 
 #Contact img{
   height: 300px;
   width: 300px
-  float: left;
-  margin-right: 25px;
+  margin-right: 0px;
 }
 
 .Projects h4{  
@@ -122,12 +141,14 @@ p{
   background-color: cornflowerblue;
 }
 .Projects {
-  width 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   box-sizing: border-box;
 }
-
+#projects:nth-child(2){
+  background-image: url(two.jpg);
+}
 .Projects .box 
 {
   width: 20vw;
@@ -137,17 +158,45 @@ p{
 background-size: cover;
 background-position: center;
 transition: 1s;
+justify-content: center;
+
+}
+.box1 {
+  background-image: url(one.jpg);
+  width: 40vw;
+  text-align: center;
+  flex-grow: 1;
+background-size: cover;
+background-position: center;
+transition: 1s;
+justify-content: center;
+}
+.box1:hover{
+  width: 80vw;
+}
+.box1:hover h1 {background: rgba(0,0,0,0)
+
+}
+.box1:hover h1 span{
+  color: #262626;
+  background:rgba (255,225,225,.8);
+  letter-spacing: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box:hover h7 span{
+  color: #262626;
+  background:rgba (255,225,225,.8);
+  letter-spacing: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box:hover h7 {
+  background: rgba(0,0,0,0)
+}
+.box:hover{
+  width: 80vw;
 }
 
-.Projects .box:nth-child(1)
-{
-  background:url(./one.jpg)
-}
-.Projects .box :nth-child(2)
-{
-  background:url(./two.jpg)
-}
-.Projects .box :nth-child(3)
-{
-  background:url(./three.jpg)
+
+.footer {
+  text-align:center;
 }
