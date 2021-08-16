@@ -95,21 +95,6 @@ a {
   background-color: cornflowerblue;
   text-shadow: none;
 }
-/*
-#Projects {
-  float: right;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  width: 100vw;
-  padding: 0px;
-  height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: cornflowerblue;
-  color: black;
-  display: flex;
-  box-sizing: border-box;
-  position: relative;
-}*/
 
 #About-Me h2 {
   text-shadow: 3px 3px lightpink;
@@ -191,6 +176,6 @@ text-orientation:mixed;
 
 
 .footer {
+  text-align: center;
   height: 150px;
-  text-align: csenter;
 }
